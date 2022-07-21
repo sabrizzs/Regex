@@ -305,6 +305,23 @@ Saída:
 
 ![image](https://i.imgur.com/8G5d0q5.png)
 
+### Teste 13
+
+Expressão regular: 
+<li> A([A-Z]) </li>
+</br>
+Palavras: 
+<li> AA </li>
+<li> aA </li>
+<li> aa </li>
+<li> Aa </li>
+<li> Za </li>
+</br>
+
+Saída:
+
+![image](https://i.imgur.com/40KhoV7.png)
+
 Observação: em relação aos tempos de execução, é possível notar que são mínimos.
 
 
