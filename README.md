@@ -30,6 +30,8 @@ No final das verificações, a função devolve se o último vértice, que deter
 
 Nesse programa, a classe Grafo está implementada. O objeto é iniciado com uma lista ligada com tamanho igual ao da expressão regular + 1. Ainda mais, a função `dfsR()` implementa uma busca em profundidade, no qual visita todos os vértices do grafo andando pelos arcos de um vértice a outro.
 
+Observação: nos testes abaixo as letras do alfabeto não são case-sensitive ([A-Z] = [a-z]).
+
 ## Testes
 
 ### Testes usando os exemplos do enunciado do EP4
