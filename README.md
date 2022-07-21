@@ -28,7 +28,7 @@ No final das verificações, a função devolve se o último vértice, que deter
 
 ### grafo.h
 
-Nesse programa, a classe Grafo está implementada. O objeto é iniciado com uma lista ligada com tamanho igual ao da expressão regular + 1, e o penúltimo grafo é ligado ao último para marcar o final do autômato. Ainda mais, a função `dfsR()` implementa uma busca em profundidade, no qual visita todos os vértices do grafo andando pelos arcos de um vértice a outro.
+Nesse programa, a classe Grafo está implementada. O objeto é iniciado com uma lista ligada com tamanho igual ao da expressão regular + 1. Ainda mais, a função `dfsR()` implementa uma busca em profundidade, no qual visita todos os vértices do grafo andando pelos arcos de um vértice a outro.
 
 ## Testes
 
@@ -119,23 +119,6 @@ Saída:
 ### Teste 2
 
 Expressão regular: 
-<li> [0-9]*\-[0-9]* </li>
-</br>
-Palavras: 
-<li> 347823-213 </li>
-<li> 472A-23 </li>
-<li> 3434- </li>
-<li> -324 </li>
-<li> 9-A </li>
-</br>
-
-Saída:
-
-![image](https://i.imgur.com/cW9gln5.png)
-
-### Teste 3
-
-Expressão regular: 
 <li> [^0-9][0-9]* </li>
 </br>
 Palavras: 
@@ -150,7 +133,7 @@ Saída:
 
 ![image](https://i.imgur.com/2D9F9Qx.png)
 
-### Teste 4
+### Teste 3
 
 Expressão regular: 
 <li> \(([0-9])*\)9([0-9])*\-([0-9])* </li>
@@ -167,7 +150,7 @@ Saída:
 
 ![image](https://i.imgur.com/lRZhlrX.png)
 
-### Teste 5
+### Teste 4
 
 Expressão regular: 
 <li> ([A-G])+([0-5])* </li>
@@ -184,7 +167,7 @@ Saída:
 
 ![image](https://i.imgur.com/a7Ig1QW.png)
 
-### Teste 6
+### Teste 5
 
 Expressão regular: 
 <li> g(oog)+le </li>
@@ -201,7 +184,7 @@ Saída:
 
 ![image](https://i.imgur.com/DqypqFz.png)
 
-### Teste 7
+### Teste 6
 
 Expressão regular: 
 <li> ([0-9])*\.([0-9])*\.[0-9]\.([0-9])* </li>
@@ -218,7 +201,7 @@ Saída:
 
 ![image](https://i.imgur.com/OkYd1R0.png)
 
-### Teste 8
+### Teste 7
 
 Expressão regular: 
 <li> ([a-z])\-([a-b])*\-([a-c])+ </li>
@@ -235,7 +218,7 @@ Saída:
 
 ![image](https://i.imgur.com/fmFDVub.png)
 
-### Teste 9
+### Teste 8
 
 Expressão regular: 
 <li> (a|b)*c </li>
@@ -252,7 +235,7 @@ Saída:
 
 ![image](https://i.imgur.com/9xSVDxQ.png)
 
-### Teste 10
+### Teste 9
 
 Expressão regular: 
 <li> (.)*([0-2])+. </li>
@@ -268,3 +251,58 @@ Palavras:
 Saída:
 
 ![image](https://i.imgur.com/VwU8DAM.png)
+
+### Teste 10
+
+Expressão regular: 
+<li> (AA*B) </li>
+</br>
+Palavras: 
+<li> A </li>
+<li> AAAAA </li>
+<li> AB </li>
+<li> B </li>
+<li> BA </li>
+</br>
+
+Saída:
+
+![image](https://i.imgur.com/zwx0aQo.png)
+
+### Teste 11
+
+Expressão regular: 
+<li> ((a|b)*c) </li>
+</br>
+Palavras: 
+<li> a </li>
+<li> ab </li>
+<li> abc </li>
+<li> ac </li>
+<li> bc </li>
+</br>
+
+Saída:
+
+![image](https://i.imgur.com/BkM3iac.png)
+
+### Teste 12
+
+Expressão regular: 
+<li> A*B </li>
+</br>
+Palavras: 
+<li> A </li>
+<li> B </li>
+<li> AAB </li>
+<li> AAABBB </li>
+<li> AB </li>
+</br>
+
+Saída:
+
+![image](https://i.imgur.com/8G5d0q5.png)
+
+Observação: em relação aos tempos de execução, é possível notar que são mínimos.
+
+
